@@ -3,7 +3,7 @@
 function list_rca_files(){
 	echo ''''''''''''''''''''''''''''''''''''''''''''''
         echo These are the rca files available:
-        ls /data/rca
+        ls -l /data/rca
 	echo ''''''''''''''''''''''''''''''''''''''''''''''
 }
 
