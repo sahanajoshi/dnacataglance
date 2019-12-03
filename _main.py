@@ -17,23 +17,26 @@ def test_internet():
 		return False
 
 
-def accept_SR_token_file_input():
+def accept_SR_token_file_input(file_path='/data/rca/'):
 	sr_number = raw_input("Enter the SR number of the case: ")
 	token  = raw_input("Enter the CXD token of the case: ")
-	file_name = raw_input("Enter the rca file to be uploaded: ")
+	file_name = raw_input("Enter the  filename to be uploaded: ")
 
-	default_file_path = '/data/rca/'
 	
 	f_ = open("/tmp/rca_load.txt", "w+")
 	f_.write(sr_number + '\n')
 	f_.write(token + '\n')
 	f_.write(file_name + '\n')
-	f_.write(default_file_path + '\n')
+	f_.write(file_path + '\n')
 	# upload_file_cxd_token(sr_number, token, file_name,default_file_path)
 	f_.close()
 
 
 if(test_internet()):
-	accept_SR_token_file_input()
+        file_path = raw_input("\nIf uploading any file other than RCA, then enter the file path, e.g, /tmp/ : ")
+        if len(file_path) == 0:
+	        accept_SR_token_file_input()
+        else:
+                accept_SR_token_file_input(file_path)
 else:
 	print("Issue with connectivity to internet, please fix and re-try")
