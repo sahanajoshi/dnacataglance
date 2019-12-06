@@ -10,3 +10,5 @@ For example, if you have to upload /tmp/log_file.log, enter /tmp/ for the path, 
 To see the stats of the DNAC, run the bash script:
         ./dnac_stats.sh
 Follow the prompts, and enter the maglev/ admin passwords when prompted.
+
+For detailed instructions on setting up the scripts and other requirements, please refer to the Deplyment Guide in this repository.
