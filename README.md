@@ -40,6 +40,10 @@ _DNA-C at a glance_ is a project that is aimed at users of the Cisco DNA-C Appli
 3. Follow the prompts. (Refer Appendix: Obtain CXD Token)
 4. The upload process runs in the background. So the SSH session to the DNA-C can be closed after initiating upload. To confirm upload success, run `cat nohup.out`
 
+### What to expect when you run the script?
+![Image of DNAC-CLI]()
+![Image of mycase portal]()
+
 ##### Notes
 * **Completion codes**
 
