@@ -30,5 +30,6 @@ export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
 list_rca_files
 if /opt/maglev/bin/python _main.py; then
+   > nohup.out
    nohup /opt/maglev/bin/python uploadRca.py &
 fi
