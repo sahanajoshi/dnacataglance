@@ -21,13 +21,14 @@ def accept_SR_token_file_input(file_path='/data/rca/'):
 	sr_number = raw_input("Enter the SR number of the case: ")
 	token  = raw_input("Enter the CXD token of the case: ")
 	file_name = raw_input("Enter the  filename to be uploaded: ")
-
+        receiver_mail_id = raw_input("Enter the mail ID to which the notification has to be sent to once upload is completed: ")
 	
 	f_ = open("/tmp/rca_load.txt", "w+")
 	f_.write(sr_number + '\n')
 	f_.write(token + '\n')
 	f_.write(file_name + '\n')
 	f_.write(file_path + '\n')
+        f_.write(receiver_mail_id + '\n')
 	# upload_file_cxd_token(sr_number, token, file_name,default_file_path)
 	f_.close()
 
