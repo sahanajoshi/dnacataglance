@@ -38,7 +38,7 @@ _DNA-C at a glance_ is a project that is aimed at users of the Cisco DNA-C Appli
 1. Goto directory where scripts were downloaded: `cd ~/dnacataglance`
 2. Run `./upload_rca.sh`
 3. Follow the prompts. (Refer Appendix: Obtain CXD Token)
-4. The upload process runs in the background. So the SSH session to the DNA-C can be closed after initiating upload. To confirm upload success, run `cat nohup.out`
+4. The upload process runs in the background. So the SSH session to the DNA-C can be closed after initiating upload. The script gives an option to enter an email id. Upon successful upload, a mail will be sent to this id.
 
 ### What to expect when you run the script?
 ![Image of DNAC-CLI](https://github.com/sahanajoshi/dnacataglance/blob/master/DNAC-CLI1.png)
