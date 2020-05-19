@@ -2,14 +2,15 @@ import requests
 import sys
 
 def test_internet():
-	test_url = 'https://www.google.com'
+	test_url = 'https://cxd.cisco.com/home'
 	response = None
 	print("Checking internet connectivity.")
 	try:
 		response = requests.get(test_url)
 	except Exception as e:
 		print("Unable to connect to internet. Make sure you have connectivity, and you have set the Proxy and DNS entries. \nError: " + str(e))
-	if  response is not None and response.status_code == 200:
+	if  response is not None and response.status_code == 401:
+		# If we are receiving a 401 response from the server, connection is OK
 		print("Internet check successful. Proceeding")
 		return True
 	else:
