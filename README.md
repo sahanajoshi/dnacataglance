@@ -23,12 +23,6 @@ _DNA-C at a glance_ is a project that is aimed at users of the Cisco DNA-C Appli
 1. Clone this repository to the DNA-C Appliance: `git clone https://github.com/sahanajoshi/dnacataglance.git`
 1. Verify download: `ls dnacataglance`
 
-## Removal / Cleanup
-
-1. Goto home directory: `cd`
-1. Delete install directory: `rm -rf dnacataglance`
-
-
 ## Features
 
 ### Upload RCA
@@ -61,6 +55,11 @@ _DNA-C at a glance_ is a project that is aimed at users of the Cisco DNA-C Appli
 1. Goto directory where scripts were downloaded: `cd ~/dnacataglance`
 2. Run `.dnac_stats.sh`
 3. Follow the prompts. Enter the maglev/admin passwords when prompted.
+
+## Removal / Cleanup
+
+1. Goto home directory: `cd`
+1. Delete install directory: `rm -rf dnacataglance`
 
 ## Appendix
 ### Obtain CXD Token
