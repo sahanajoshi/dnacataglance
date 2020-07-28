@@ -6,7 +6,7 @@ def test_internet():
 	response = None
 	print("Checking internet connectivity.")
 	try:
-		response = requests.get(test_url)
+		response = requests.get(test_url, verify=False)
 	except Exception as e:
 		print("Unable to connect to internet. Make sure you have connectivity, and you have set the Proxy and DNS entries. \nError: " + str(e))
 	if  response is not None and response.status_code == 401:
